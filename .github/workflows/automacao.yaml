@@ -39,7 +39,7 @@ jobs:
 
       - name: Publicar dashboard
         run: |
-          poetry run rsconnect add --account '${{ env.projetos-antonio }}' --name '${{ env.projetos-antonio }}' --token '${{ env.FC82236C839DE82034F12D8A16DF13D2 }}' --secret '${{ env.6Z/lm/xZjHp5TRpdEmrGO1R1P64bgVtzzCqn4jO7 }}'
+          poetry run rsconnect add --account '${{ env.projetos-antonio }}' --name '${{ env.projetos-antonio }}' --token '${{ env.FC82236C839DE82034F12D8A16DF13D2 \ }}' --secret '${{ env.6Z/lm/xZjHp5TRpdEmrGO1R1P64bgVtzzCqn4jO7 }}'
           poetry run rsconnect deploy shiny projeto1 --title projeto1
 
       - name: Commit & Push
